@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex flex-col w-full px-4 md:px-20 lg:px-40 mb-20">
-      <section className="flex flex-col items-center justify-center h-1/2 rounded-3xl bg-slate-200 mt-12">
+      <section className="flex flex-col items-center justify-center px-2 py-12 sm:py-24 rounded-3xl bg-slate-200 mt-12">
         <Input
           type="text"
           placeholder="컨텐츠 검색"
@@ -21,7 +21,6 @@ export default function Home() {
           <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 추가</Button>
           <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 삭제</Button>
           <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 수정</Button>
-          <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 조회</Button>
         </div>
       </section>
 
