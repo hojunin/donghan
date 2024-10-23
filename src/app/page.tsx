@@ -22,7 +22,7 @@ export default function Home() {
       <section className="flex flex-col ">
         <h2 className="text-4xl font-bold">리스트</h2>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="grid grid-cols-4 gap-4 mt-10 w-full">
           {DUMMY_CONTENTS.map((content) => (
             <ContentCard key={content.title} {...content} />
           ))}
