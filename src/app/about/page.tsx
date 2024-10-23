@@ -1,5 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | 김동한 개인 웹사이트",
+  description: "김동한 개인 웹사이트입니다",
+};
 
 const Section = ({
   title,

@@ -1,6 +1,12 @@
 import React from "react";
 
 import ContentCard from "@/components/contents/card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contents | 김동한 개인 웹사이트",
+  description: "김동한 개인 웹사이트입니다",
+};
 
 const DUMMY_CONTENTS = [
   { title: "컨텐츠 1", description: "설명 1", content: "컨텐츠 1" },

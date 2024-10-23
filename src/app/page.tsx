@@ -1,11 +1,17 @@
 import ContentCard from "@/components/contents/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | 김동한 개인 웹사이트",
+  description: "김동한 개인 웹사이트입니다",
+};
 
 export default function Home() {
   return (
     <main className="flex flex-col w-full h-screen px-40">
-      <section className="flex flex-col items-center justify-center h-1/2 rounded-3xl bg-slate-200">
+      <section className="flex flex-col items-center justify-center h-1/2 rounded-3xl bg-slate-200 mt-12">
         <Input
           type="text"
           placeholder="컨텐츠 검색"
