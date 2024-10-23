@@ -29,7 +29,7 @@ const ProjectCard = ({
   description: string;
   imageSrc: string;
 }) => (
-  <div className="bg-white shadow-md rounded-lg p-6 hover:bg-gray-100 transition duration-300 flex">
+  <div className="bg-white shadow-md rounded-lg p-6 hover:bg-gray-100 transition duration-300 flex flex-col sm:flex-row">
     <div className="flex-grow">
       <h3 className="text-xl font-medium mb-2">{title}</h3>
       <p className="text-lg">{description}</p>
@@ -37,7 +37,7 @@ const ProjectCard = ({
     <img
       src={imageSrc}
       alt={title}
-      className="w-40 h-40 object-contain ml-4 rounded-md"
+      className="w-full sm:w-40 h-40 object-contain mt-4 sm:mt-0 sm:ml-4 rounded-md"
     />
   </div>
 );
@@ -50,7 +50,7 @@ const AboutPage = () => {
           <strong className="text-primary">디지털 마케팅 전문가</strong> |
           콘텐츠 크리에이터 | 트래픽 성장 전략가
         </p>
-        <div className="flex space-x-4 mt-4">
+        <div className="flex flex-wrap space-x-4 mt-4">
           <Link
             href="https://www.linkedin.com/in/your-linkedin"
             target="_blank"

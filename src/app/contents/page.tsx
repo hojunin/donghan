@@ -16,10 +16,12 @@ const DUMMY_CONTENTS = [
 
 const ContentsPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full px-40">
-      <h2 className="text-4xl font-bold">컨텐츠 페이지</h2>
+    <div className="flex flex-col items-center justify-center w-full px-4 md:px-20 lg:px-40">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+        컨텐츠 페이지
+      </h2>
 
-      <div className="grid grid-cols-4 gap-4 mt-10 w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 w-full">
         {Array(50)
           .fill(DUMMY_CONTENTS)
           .flat()

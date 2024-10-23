@@ -10,25 +10,25 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-screen px-40">
+    <main className="flex flex-col w-full px-4 md:px-20 lg:px-40 mb-20">
       <section className="flex flex-col items-center justify-center h-1/2 rounded-3xl bg-slate-200 mt-12">
         <Input
           type="text"
           placeholder="컨텐츠 검색"
-          className="w-1/2 h-16 p-4 mb-5 border border-gray-300 rounded-full"
+          className="w-full md:w-3/4 lg:w-1/2 h-16 p-4 mb-5 border border-gray-300 rounded-full"
         />
-        <div className="flex justify-around w-1/2">
-          <Button className="px-4 py-2 rounded-full">컨텐츠 추가</Button>
-          <Button className="px-4 py-2 rounded-full">컨텐츠 삭제</Button>
-          <Button className="px-4 py-2 rounded-full">컨텐츠 수정</Button>
-          <Button className="px-4 py-2 rounded-full">컨텐츠 조회</Button>
+        <div className="flex flex-wrap justify-around w-full md:w-3/4 lg:w-1/2">
+          <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 추가</Button>
+          <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 삭제</Button>
+          <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 수정</Button>
+          <Button className="px-4 py-2 m-1 rounded-full">컨텐츠 조회</Button>
         </div>
       </section>
 
-      <section className="flex flex-col ">
-        <h2 className="text-4xl font-bold">리스트</h2>
+      <section className="flex flex-col">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">리스트</h2>
 
-        <div className="grid grid-cols-4 gap-4 mt-10 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 w-full">
           {DUMMY_CONTENTS.map((content) => (
             <ContentCard key={content.title} {...content} />
           ))}
